@@ -1,0 +1,614 @@
+package week03;
+
+import java.util.Scanner;
+
+public class Mentorjava03 {
+	public static void main(String[] args) {
+//		int[] arr = new int[4]; // 4칸짜리의 배열의 선언과 생성
+//		System.out.println(arr); // 배열의 시작주소값 출력
+
+//		int[] arr = new int[4]; // 4개의 공간을 가진 배열 선언
+//		
+//		arr[0] = 1;
+//		arr[1] = 2;
+//		arr[2] = 3;
+//		arr[3] = 4;
+		// 배열의 인덱스번호 0부터 3까지 각각 1,2,3,4 값 저장
+
+//		System.out.println("arr[0] = " + arr[0]);
+//		System.out.println("arr[1] = " + arr[1]);
+//		System.out.println("arr[2] = " + arr[2]);
+//		System.out.println("arr[3] = " + arr[3]);
+		// 배열에 저장된 값 인덱스 번호 0~3까지 출력
+
+//		int[] intArray = new int[5]; // 5개의 공간을 가지는 정수형 배열 선언
+//		String[] strArray = new String[5]; // 5개의 공간을 가지는 문자열 배열 선언
+//		
+//		int[] varArray = {1, 2, 3, 4, 5}; // 정수형 배열에 해당 값을 저장한다
+//		
+//		System.out.println("intArray[0] = " + intArray[0]);	
+//		System.out.println("intArray[1] = " + intArray[1]);	// 정수형 배열에 칸만 들어가 있으므로 기본형인 0값으로 출력된다
+//		
+//		System.out.println("strArray[0] = " + strArray[0]);	
+//		System.out.println("strArray[1] = " + strArray[1]);	// 문자열 배열에 칸만 생성된 상태이므로 기본형인 null값이 출력된다
+//		
+//		System.out.println("varArray[0] = " + varArray[0]);
+//		System.out.println("varArray[1] = " + varArray[1]);	// 값이 저장되어있는 정수형 배열 이므로 인덱스 번호 0과 1에 있는 값 1과 2가 출력된다
+
+//		int[] numbers = new int[10];	// 10개의 공간을 가지는 정수형 배열을 선언한다
+//		
+//		for(int i = 0; i < numbers.length; i++) {	//for문을 사용해 값을 넣어준다
+//			numbers[i] = (int)(Math.random() * 30) +1;	// 1부터 30까지의 숫자가 랜덤하게 나오는 값 i
+//		}
+//		
+//		int sum = 0;	// sum 변수 선언 및 초기화
+//		for(int i = 0; i < numbers.length; i++) {	// i가 배열의 길이보다 작을때까지 반복실행하겠다
+//			if(numbers[i] % 2 == 0) {	//i를 2로 나눈 나머지가 0일때
+//				sum += numbers[i];	//의 값을들 i 값에 누적시켜 저장한다
+//			}
+//		}
+//		for(int i = 0; i < numbers.length; i++) {	// i가 배열의 길이보다 작을때까지 반복실행
+//			System.out.println(numbers[i] + " "); 	// 출력 메시지 배열 사이 공백포함
+//		}
+//		
+//		System.out.println(); //줄바꿈 출력
+//		System.out.println("배열의 짝수들의 합 : " + sum);	 // sum 값 출력
+//		
+//		char[] cards = {'1', 'L', 'O', '2', 'V', '3', 'E'}; // 문자형 배열에 값을 저장
+//		String myWord = ""; // 문자열 변수를 선언하고 초기화 한다
+//		
+//		for(int i = 0; i < cards.length; i++) {	// i가 배열이 길이 보다 작을때 계속 반복한다
+//			int word = cards[i];	//i가 들어가는 배열 선언
+//			if((word >= 65 && word <= 90) || (word >= 97 && word <= 122)) { // 값이 65보다 같거나 크거나, 90보다 같거나 작거나 또는 값이 97보다 같거나 크거나 122보다 작거나 같을때 true
+//				myWord += (char)word; // 문자형으로 강제 형변환 시키고 누적시킨 값을 변수에 저장한다
+//			}
+//		}
+//		System.out.println("단어 : " + myWord); // LOVE출력
+//		
+//		
+//		int [] arr = {1,6,2,3,10,7,4,5,8,9}; // int형 배열에 값을 저장한다
+//		int temp = 0; // 정수형 변수 선언 및 초기화
+//		
+//		for(int i = arr.length - 1; i > 0; i--) { // i는 배열의 길이보다 -1 이고 0보다 클때 반복 실행한다
+//			for(int j = 0; j < i; j++) { // j는 0부터 i보다 작을때 반복 실행한다
+//				if(arr[j] > arr[j+1]) {	// 배열j가 배열j+1 보다 크면 ture
+//					
+//					temp = arr[j+1];	//temp변수에 배열j+1을 저장한다
+//					arr[j+1] = arr[j];	//arrj+1에 arrj를 저장한다
+//					arr[j] = temp;		// arrj에 temp를 저장한다
+//					
+//							
+//				}
+//			}
+//		}
+//		System.out.println("정렬 후 출력 : "); // 출력메시지
+//		for(int i = 0; i < arr.length; i++) { // i가 배열의 길이 보다 작을때까지 반복실행
+//			System.out.print(arr[i] + " ");	//배열i를 공백 한칸씩 주어 출력
+////			System.out.print(arr); // arr 주소값 출력
+//		}
+
+//		int[] arr = {1,6,2,3,10,7,4,5,8,9};	// 정수형 배열에 값을 저장한다
+//		System.out.println(Arrays.toString(arr));	//배열을 하나의 문자열로 출력한다
+
+//		int[] arr = {1,6,2,3,10,7,4,5,8,9};	// 정수형 배열에 값을 저장한다
+//		
+//		System.out.println("정렬 전 배열 : " + Arrays.toString(arr)); // 배열을 하나의 문자열로 출력
+//		Arrays.sort(arr);	// 배열을 오름차순으로 정렬
+//		System.out.println("정렬 전 배열 : " + Arrays.toString(arr));	// 오름차순으로 정렬된 배열을 출력
+
+//		Integer[] arr = {1,6,2,3,10,7,4,5,8,9}; // 배열의 값을 저장
+//		System.out.println("정렬 전 배열 :" + Arrays.toString(arr)); // 배열을 하나의 문자열로 출력
+//		Arrays.sort(arr, Comparator.reverseOrder());	// 배열을 내림차순으로 정렬한다
+//		System.out.println("정렬 전 배열 :" + Arrays.toString(arr));	// 정렬된 배열을 하나의 문자열로 출력한다
+
+//		int[] arr01 = {1,2,3};	// 배열의 값을 저장
+//		
+//		int[] arr02 = arr01;	// 배열에 arr01변수 값을 저장
+//		
+//		System.out.println("arr01 배열 : " + Arrays.toString(arr01)); // 배열을 하나의 문자열로 출력
+//		
+//		arr02[1] = 10;	// 배열에 인덱스번호 1번에 값10을 저장한다
+//		
+//		System.out.println("arr02 배열 : " + Arrays.toString(arr01)); 	//arr01배열을 출력
+//		System.out.println("arr01 배열 : " + Arrays.toString(arr02));		//arr02배열을 출력
+
+//		int[] card = {1, 6, 4, 5, 3, 2};	// 정수형 배열에 값을 저장한다
+//		int[] newCard = new int[card.length];	// 정수형 배열인 card변수 길이만큼의 칸을 생성한다
+//		
+//		for(int i = 0; i < card.length; i++) { // i는 0부터 배열의 길이보다 작을때까지 1씩 증가한다
+//			newCard[i] = card[i];	// 배열 대입
+//		}
+//		System.out.println("card 배열 : " + Arrays.toString(card)); 		// 변수 card를 하나의 문자열로 출력
+//		System.out.println("card 배열 : " + Arrays.toString(newCard));	// 변수 newCard를 하나의 문자열로 출력
+
+//		int[] card = {3, 1, 4, 5, 10};	// 정수형 배열의 값을 저장한다
+//		int[] newCard = Arrays.copyOf(card, card.length);	// 배열의 깊은 복사 (복사 대상, 복사 길ㅇ치)
+//		System.out.println("card 배열 : " + Arrays.toString(card)); 	// card 배열을 하나의 문자열로 출력
+//		
+//		card[1] = 10;	// 배열의 인덱스 번호 1에 값10을 대입
+//		System.out.println("card 배열 : " + Arrays.toString(card)); // 하나의 문자열로 배열출력
+//		System.out.println("newCard 배열 : " + Arrays.toString(newCard));	// 하나의 문자열로 배열 출력
+
+//		int[] card = {1, 6, 4, 5, 3, 2};	//배열에 값을 저장
+//		int[] newCard = new int[card.length];	// 배열에 칸수 생성
+//		
+//		System.arraycopy(card, 0, newCard, 0, card.length); //복사 대상 배열, 복사 시작 위치, 카피할 배열, 시작 위치, 복사할 길이
+//		
+//		System.out.println("card 배열 : " + Arrays.toString(card));	// 하나의 문자열로 출력
+//		System.out.println("newCard 배열 : " + Arrays.toString(newCard));	//하나의 문자열로 출력
+
+//		int[][] arr = new int[2][3];	// 2차원 배열 2행 3열 칸 생성
+//		
+//		arr[0][0] = 1;	// 0행 0열 의 값 1
+//		arr[0][1] = 2;	// 0행1열 의 값2 
+//		arr[0][2] = 3;	// 0행2열 의 값3
+//
+//		arr[1][0] = 11;	//1행0열의 값 11
+//		arr[1][1] = 12;	//1행1열의 값 12
+//		arr[1][2] = 13;	//1행2열의 값 13
+//		
+//		System.out.println("2차원 배열 : " + arr); // 주소값 출력 
+//		System.out.println("2차원 배열 1행 : " + arr[0]); // 0행값 출력
+//		
+//		System.out.println("행의 크기 : " + arr.length); // 행의 크기 출력
+//		
+//		System.out.println("1 행의 열 크기 :" + arr[0].length);		//1행 열크기 출력
+//		System.out.println("2 행의 열 크기 :" + arr[1].length);		//2행 열크기 출력
+//		
+//		System.out.println("arr[0][0] = " + arr[0][0]);	//0행0열 값 출력
+
+//		int[][] arr = new int[5][5];	//5행5열의 배열 생성
+//		
+//		int count = 1;	// 변수 선언 
+//		
+//		for(int i = 0; i < 5; i++) {	// 배열의 행 반복문
+//			for(int j = 0; j < 5; j++) {	//배열의 열 반복문
+//				arr[i][j] = count++; // 1씩 증가하는 배열 생성
+//			}
+//		}
+//		
+//		for(int i = 0; i < 5; i++) { // 배열의 행 반복문
+//			for(int j = 0; j < 5; j++) { // 배열의 열 반복문
+//				System.out.print(arr[i][j] + " "); 	// 배열의 값 사이에 공백 한칸 입력하여 저장하여 출력
+//			}
+//			System.out.println();	// 줄바꿈 출력
+//		}
+
+//		int[][] lotto = { { 2, 6, 11, 33, 42, 44 }, { 1, 6, 17, 22, 24, 33 }, { 7, 16, 24, 33, 42, 44 },
+//				{ 11, 27, 32, 34, 43, 46 }, { 6, 17, 22, 24, 33, 41 } }; // 정수형 배열에 값 저장
+//
+//		Scanner scan = new Scanner(System.in); // 스캐너 클래스 생성
+//		String myNum = "";	// 문자열 변수 선언 및 초기화
+//		System.out.println("당첨 숫자 6개를 연속으로 입력해주세요. >>"); // 메시지 출력
+//		myNum = scan.next(); // 입력 메소드 
+//
+//		boolean isWin = false; //논리형 변수 선언 및 초기화
+//
+//		for (int i = 0; i < lotto.length; i++) { // i가 0부터 배열의 크기 보다 작을때까지 반복하고 i는 1씩 증가
+//			String lottoNumber = ""; //변수 선언 및 초기화
+//			for (int j = 0; j < lotto[i].length; j++) { //j가 0부터 배열의 길이보다 작을떄까지 반복 j는 1씩 증가
+//				lottoNumber += lotto[i][j]; //변수에 2차원 배열의 값을 누적하여 대입한다
+//			}
+//			if (myNum.equals(lottoNumber)) { // 문자열 비교 하여 입력한 값과 같으면 true
+//				isWin = true; // 변수에 true값 대입
+//				break;	// 반복문 밖으로 나가기
+//			}
+//		}
+//
+//		if(isWin) {
+//			System.out.println(myNum + " 번호 당첨!!"); //조건식이 true 일때 실행문 출력
+//		}else {
+//			System.out.println(myNum + " 번호는 당첨되지 못했습니다.");	//if의 조건식이 true가 아닐 경우 실행문 출력
+//		}
+//		scan.close();	// 스캐너 닫기
+
+//int[] score = {90, 92, 93};	// 정수형 배열에 값 저장
+//
+//int sum = 0;	// 변수 선언 및 초기화
+//double avg = 0;	// 변수 선언 및 초기화
+//for(int val : score) {	//배열을 반복해 변수에 저장하는데 그때의 실행문으로 값을 저장한다 그 후에 빠져나간다
+//	sum += val; // val의 값을 sum에 누적하여 저장
+//}
+//		avg = (double) sum/3; // 강제형변환 한 값을 저장
+//		System.out.println("총점 : " + sum + ", 평균 : " + avg); //메시지 출력
+
+		// public class Cat { // 클래스 선언
+		// }
+
+//		public static void main() { // 메인메소드 실행
+//			Cat c = new cat();	// cat클래스를 이용해서 객체 생성
+//		}
+
+		// class Cat { //cat클래스 선언
+
+		// }
+
+//		public class EX07_04 { //클래스 선언
+//			public static void main() {	//메인메소드 선언	
+//				Cat c = new Cat();	//cat클래스를 이용해서 객체 생성
+//	}
+
+//		public class Car {	// car클래스 선언
+//		int wheel = 4;	//변수에 값 저장
+//	}
+
+//		public static void main(String[] args) {	//메인 메소드 선언
+//			Car c = new Car(); // car클래스를 이용해 객체 생성
+//			System.out.println("wheel의 개수는 " + c.wheel + "개입니다."); // 메시지 출력
+
+//		c.wheel = 5; //변수에 값을 대입
+//		System.out.println("wheel의 개수는 " + c.wheel + "개입니다."); // 메시지 출력
+
+//		public class Car {	//클래스 car 선언
+//			int wheel; // 필드 생성
+//			
+//			void ride() {	// 메소드 생성
+//				System.out.println("달립니다"); //메시지 출력
+//			}
+//		}
+
+//		public class Car{ 	// 클래스 선언
+//			int wheel = 4; 	// 변수에 값을 저장;
+//			
+//			void ride() {	// ride 메소드 생성
+//				System.out.println("달립니다");	//메시지 출력
+//				System.out.println("씽씽씽");	//메시지 출력
+//			}
+//		}
+
+//		Car c = new Car();	// 클래스를 이용하여 객체 생성
+//		c.ride();	// 메소드 사용
+//		c.ride();
+//		c.ride();
+
+//		public class Family{	//Family 클래스 선언
+//			String name;	// 필드, 객체 생성
+//			int age;	// 필드 , 객체 생성
+//			String address = "서울";	// 객체 생성 후 값 저장
+//		}
+
+//		Family father = new Family();	// 클래스를 이용하여 객체 생성
+//		Family son = new Family();	// 클래스를 이용하여 객체 생성
+//		
+//		fathe.address = "인천";	// 변수 선언 하고 값을 저장
+//		System.out.println(son.address);	//아들 객체 주소 출력
+
+//		public class Student{	//클래스 선언
+//			static String schoolName = "코리아 고등학교"; 	// 문자열 값을 저장
+//			
+//			static void goToSchool() {	// 메소드 선언
+//				System.out.println("학교에 갑니다");	// 메시지 출력
+//			}
+//		}
+
+//		System.out.println(Student.schoolName);	//메시지 출력
+//		Student.goToSchool();	//정적 메서드 호출
+
+//		public class Student { // 클래스 선언
+//			static String schoolName = "코리아 고등학교"; // 문자열 값을 저장
+//			String studentName; // 필드 객체 생성
+//			
+//			static void goToSchool() { // 정적 메소드 선언
+//				System.out.println("오늘은 학교에 가는 날입니다."); // 메시지 출력
+//			}
+//			void hello() {	//인스턴스 메서드 선언
+//				System.out.println("안녕하세요, 제 이름은 " + studentName + "입니다."); // 메시지 출력
+//			}
+//		}
+
+//		Student stu1 = new Student();	//클래스를 이용하여 객체 생성
+//		stu1.studentName = "김고이";	// 문자열 값을 저장
+//		stu1.hello(); // 매서드 호출
+//		System.out.println("학교는 " + Student.schoolName + "입니다.");	//메시지 출력
+//		Student.goToSchool();	//메서드 호출
+//		
+//		Student stu2 = new Student();	//클래스를 이용하여 객체 생성
+//		stu2.studentName = "김고삼";	// 문자열 값 저장
+//		stu2.hello();	// 메서드 호출
+//		System.out.println("학교는 " + Student.schoolName + "입니다.");	//메시지 출력
+//		Student.goToSchool();	//메서드 호출
+
+//		printHello(); // main 메서드 안에서 printHello() 메서드 호출
+
+		// Code2 jogger = new Code2(); // 객체 생성
+//	jogger.run(); // jogger 인스턴스의 run() 메서드 호출
+//
+//
+//}
+//	
+//static void printHello() { //위의 main 메소드 안에서 호출하기 위해 static사용
+//	System.out.println("안녕하세요");
+//	System.out.println("만나서 반갑습니다.");
+//}
+//	
+//	void run() { // run 이라는 메소드 생성
+//		System.out.println("run run run!"); //출력메시지
+//	}
+//	
+//	String name; // 조거의 이름
+//	void run() { // run 이라는 메소드 생성
+//		System.out.println("run run run!"); //출력메시지
+//	}
+//	void sayName() { // sayName이라는 메소드 생성
+//		System.out.println("제 이름은 " + name + "입니다." ); //출력메시지
+//	}
+//	Jogger jogger = new Jogger(); // 객체 생성
+//	jogger.name = "김나비";
+//	jogger.sayName(); // jogger 인스턴스의 sayName() 메서드 호출
+//	jogger.run(); // jogger 인스턴스의 run() 메서드 호출
+//	
+//	void count(int bookNum) { // count 라는 메소드에 bookNum이라는 매개변수 사용
+//		System.out.println("책은" + bookNum + "권 입니다."); // 출력 메시지
+//	}
+//	
+//	Book myBook = new Book(); // 객체 생성
+//	myBook.count(3); // myBook인스턴스 count 메서드 호출
+//	
+//	
+//	void sum(int num1, int num2) { // sum이라는 메소드명에 num1,num2매개변수를 사용해 메소드를 생성
+//		System.out.println("두 수의 합은" + (num1 + num2) + "입니다.");//메소드를 사용하게 되면 출력되는 메시지
+//	}
+//	
+//	
+//	Calc calc = new Calc(); //객체 생성
+//	calc.sum(5,3); // calc 인스턴스 sum 메서드 호출
+//	calc.sum(10,7); // calc 인스턴스 sum 메서드 호출
+//	
+//	
+//	void introduce(String name, int age) { //intrp
+//		System.out.println("제 이름은" + name + "이고, 나이는 " + age + "세입니다.");
+//	}
+//	
+//	void hello() {
+//		System.out.println("안녕하세요");
+//	}
+//	
+//	Person hong = new Person(); // 객체 생성
+//	hong.introduce("홍길동", 20); // hong 인스턴스 introduce 메서드 호출
+//	hong.hello();//hong 인스턴스 hello메소드 호출
+//	
+//	void sum(int[] nums) {//sum이라는 메소드명에 nums라는 매개변수 배열을 생성
+//		int result = 0; // 결과값 초기화
+//		for(int i = 0; i < nums.length; i++) {//for문을 사용하여 배열에 값을 하나씩 넣어준다
+//			result += nums[i]; //누적해서 더하여 result의 값으로 넣어준다
+//		}
+//		System.out.println("숫자들의 합은 " + result + "입니다.");
+//	}
+//	
+//	
+//	int nums[] = {100, 200}; //배열 생성
+//	Calc calc = new Calc(); // Calc 객체 생성
+//	calc.sum(nums); // calc 인스턴스의 sum 메서드 호출
+//	
+//	public int sum(int[] nums) { // sum이라는 메소드명에 배열을 매개변수로 받는 메소드 생성
+//		
+//	int result = 0; // 결과값을 초기화한다
+//	for(int i = 0; i < nums.length; i++) { //for문을 통해 배열의 값을 저장한다
+//		result += nums[i]; // 배열에 저장하는 값을 result변수에 누적하여 더해 저장한다
+//	}
+//	return result; // result 값을 반환한다
+//	}
+//	
+//	public static void main(String[] args) { // main 메소드 생성
+//		
+//	int[] nums = {500, 200}; // 배열의 값을 저장한다
+//	Calc calc = new Calc(); // 객체 생성
+//	
+//	System.out.println("숫자들의 합은 " + calc.sum(nums) + "입니다.");//출력 메시지
+//	}
+//
+//	}
+//	
+//	public int score(int[] scores) {// score라는 메소드명에 배열을 매개변수로 사용하는 메소드 생성
+//		int result = 0; // 값을 초기화
+//		for(int i = 0; i < scores.length; i++) {//for문을 통해 배열에 값을 반복 실행하여 받고
+//			result += scores[i]; // 값은 result에 누적되어 더해진다
+//		}
+//		return result; // result 결과를 반환한다
+//
+//		int[] studentA = {97, 53}; // studentA 배열에 값을 저장한다
+//		int[] studentB = {95, 66}; // studentB 배열에 값을 저장한다
+//		
+//		MidTerm mid = new MidTerm(); // 객체 생성
+//		int sumA = mid.score(studentA); // 매소드 호출
+//		int sumB = mid.score(studentB); // 메소드 호출
+//		
+//		if(sumA > sumb) { // if(조건식1)이 참일때 아래 실행문 실행
+//			System.out.println("A학생의 중간고사 총점이 더 높습니다"); // 조건식이 true일때 실행
+//		}else if(sumA < sumB) {
+//			System.out.println("B학생의 중간고사 총점이 더 높습니다");//조건식 1은 false이고, 조건식2는 true일때 실행한다
+//		}else {
+//			System.out.println("두 학생의 중간고사 총점이 같습니다.");// 조건식 1과 2가 false이면 실행한다
+//		}
+//
+//		void take(int m) {//take라는 메소드에 매개변수 m을 사용하는 메소드 생성
+//			
+//			while(true) { //true일때 반복실행한다
+//				if(m < 3000) { // 조건식이 true 일 때
+//					System.out.println("교통카드를 충전하러 갑니다."); // 조건식이 true 일때 실행할 문장
+//					return;	//값을 반환한다
+//				}
+//				System.out.println("버스를 탑니다."); // 조건식이 false일때 실행할 문장
+//				m -= 1250; // m의 값에 1250을 뺀 값을 저장한다
+//			}
+//		}
+//		int money = 10000; // 정수형 변수 money에 값10000을 저장한다
+//		
+//		Bus bus = new Bus(); //bus객체 생성
+//		bus.take(money); //bus 인스턴스의 take 메서드 호출
+
+//public class Person{ // 클래스 선언
+//	int age; // 객체 선언
+//}
+
+//	public static void main(String[] args) { //메인 메소드 선언
+//		Person kim = new Person();	//클래스를 이용하여 객체 생성
+//		kim.age = -30; // 변수에 값을 저장
+//		System.out.println("kim의 나이는 " + kim.age + "세입니다."); // 메시지 출력
+//	}
+
+//	public class Person{	//정적 클래스 선언
+//		
+//	private int age;	// 해당 클래스에서만 접근 가능한 필드 선언
+//	
+//	void setAge(int num) {	// 메소드 선언
+//		if(num <= 0) { //조건식이 true일때
+//			System.out.println("잘못된 수를 입력하셨습니다. 1이상의 값으로 설정하세요.");	// 해당 실행문 실행
+//			return; // 값을 반환하고 메소드 종료
+//		}else { //그외에 경우
+//			age = num;	//필드에 값을 저장
+//		}
+//	}
+//	int getAge() { 	//메소드 선언
+//		return age; // 값을 반환하고 메소드 종료
+//	}
+//	}
+//	public static void main(String[] args) {	//메인 메소드 선언
+//		
+//	Person kim = new Person();	// 클래스를 이용하여 객체 생성
+//	kim.setAge(-30);	// 필드에 값 저장
+//	kim.setAge(30);	// 필드에 값 저장
+//	System.out.println("kim의 나이는 " + kim.getAge() + "세입니다."); // 메시지 출력
+
+//	public class Snack{	// 정적 클래스 선언
+//		int price;	// 핃드 선언
+//		
+//		void info() { //메소드 선언
+//			System.out.println("과자의 가격은 " + price + "원입니다."); //메시지 출력
+//		}
+//	}
+//	
+//		Snack chip = new Snack();	// 클래스를 이용하여 객체 생성
+//		chip.price = 2000;	//필드 값 선언
+//		chip.info();	// 메서드 호출
+
+//	public class Snack{	// 클래스 선언
+//		int price;	// 필드 선언
+//		
+//		Snack(int p){	// 직접 선언한 생성자
+//			price = p;	// 매개변수로 받은 값을 필드에 대입
+//		}
+//		
+//		void info() {	// 메소드 선언
+//			System.out.println("과자의 가격은" + price + "원입니다."); //메시지 출력
+//		}
+//		
+//		
+//	}
+
+//	Snack chip = new Sncak(5000);	//클래스를 이용하여 객체 생성
+//	chip.info();	//메소드 호출
+
+//	public class Person{	// 클래스 선언
+//		String name;	//객체 필드 생성
+//		int age;	// 객체 필드 생성
+//		
+//		Person(String n, int a){ //매개변수가 2개인 생성자
+//			name = n;	// 매개변수의 값을 필드에 대입
+//			age = a;	// 매개변수의 값을 필드에 대입
+//			
+//		}
+//		
+//		void introduce() {	//메소드 선언
+//			System.out.println("안녕하세요. 저는 " + age + "세" + name + "입니다"); //메시지 출력
+//		}
+//	}
+//	
+//	Person p1 = new Person("김자바", 20);	// 클래스를 이용하여 객체 생성
+//	Person p2 = new Person("이코딩", 40);	// 클래스를 이용하여 객체 생성
+//	
+//	p1.introduce(); // 메소드 호출
+//	p2.introduce();	// 메소드 호출
+
+//	String brand;	//객체 필드 선언
+//	int series;	// 객체 필드 선언
+//	String color = "검정색";	//객체필드 선언 값 저장
+//	
+//	Phone(String b, int s, Sting c){	// 매개변수3개인 생성자
+//		brand = b;	// 매개변수 값을 필드 값에 대입
+//		series = s;	//매개변수값을 필드에 대입
+//		color = c;	//매개변수값을 필드에 대입
+//		
+//	}
+//	
+//	void phoneInfo() {	//메소드 선언
+//		System.out.println(color + " " + brand + " " + series);	//메시지 출력
+//	}
+
+//	public static void main(String[] args) {	//메인 메소드 선언
+//		Phone p1 = new Phone("갤럭시", 1, "흰색")	// 클래스를 이용하여 객체 생성
+//		Phone p2 = new Phone("아이폰", 2)	//클래스를 이용하여 객체 생성
+//		
+//	}
+
+//	public class Phone{	// 클래스 선언
+//		String brand;	// 객체 필드 선언
+//		int series;	//객체 필드 선언
+//		String color = "검정색";	// 객체 필드 선언 및 값 대입
+//		
+//		Phone(String b, int s){	// 매개변수가 2개인 생성자 선언
+//			brand = b;	//매개변수값을 필드에 대입
+//			series = s;	//매개변수값을 필드에대입
+//		}
+//	}
+//	Phone(String b, ins s, String c){	// 매개변수가 3개인 생성자 선언
+//		brand = b;	//매개변수값을 필드에 대입
+//		series = s;	//매개변수값을 필드에 대입
+//		color = c;	//매개변수값을 필드에 대입
+//		
+//	}
+//	void phoneInfo() {	//메소드 선언
+//		System.out.println(color + " " + brand + " " + series);	//메시지 출력
+//	}
+
+//			Phone p1 = new Phone("갤럭시", 1, "흰색");	//클래스를 이용하여 객체 생성
+//			Phone p2 = new Phone("아이폰", 2);	//클래스를 이용하여 객체 생성
+//		
+//		p1.phoneInfo();	//메소드 호출
+//		p2.phoneInfo();	//메소드 호출
+
+//		public class Book{	//클래스 선언
+//			String title = "제목없음";	// 객체 필드 생성 및 값 대입
+//			int series = 1;	// 객체 필드 생성 및 값 저장
+//			int  page = 100;	// 객체 필드 생성 및 값 저장
+//			
+//			Book(){	// 기본 생성자
+//				
+//			}
+//			Book(String t){	// 매개변수가 1개인 생성자
+//				title = t;	//매개변수값을 필드에 대입
+//
+//			}
+//						
+//			Book(String t, int p){	// 매개변수가 2개인 생성자
+//				title = t;	//매개변수값을 필드에 대입
+//				page = p;	//매개변수값을 필드에 대입
+//			}
+//			Book(int s, String t){	// 매개변수가 2개인 생성자
+//				series = s;	//매개변수값을 필드에 대입
+//				title = t;	//매개변수값을 필드에 대입
+//			}
+//		}
+
+//		Book b1 = new Book();	// 클래스를 이용하여 객체 생성
+//		System.out.println("b1.title : " + b1.title);
+//		System.out.println("b1.series : " + b1.series);
+//		System.out.println("b1.page : " + b1.page);
+//		
+//		Book b2 = new Book("멘토시리즈 자바");// 클래스를 이용하여 객체 생성
+//		System.out.println("b2.title : " + b2.title);
+//		System.out.println("b2.series : " + b2.series);
+//		System.out.println("b2.page : " + b2.page);
+//		
+//		Book b3 = new Book("신데렐라" , 170);// 클래스를 이용하여 객체 생성
+//		System.out.println("b3.title : " + b3.title);
+//		System.out.println("b3.series : " + b3.series);
+//		System.out.println("b3.page : " + b3.page);
+//		
+//		Book b4 = new Book(5, "노인과 바다");// 클래스를 이용하여 객체 생성
+//		System.out.println("b4.title : " + b4.title);
+//		System.out.println("b4.series : " + b4.series);
+//		System.out.println("b4.page : " + b4.page);
+		// 출력 메시지 안에 메소드를 호출하여 그 값을 출력한다.
+	}
+}
